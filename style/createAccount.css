@@ -1,0 +1,447 @@
+/* Create Account Page */
+.create-account-page {
+  min-height: 100vh;
+  background: linear-gradient(146.7857536072102deg, rgba(239, 246, 255, 1) 0%, rgba(250, 245, 255, 1) 50%, rgba(253, 242, 248, 1) 100%);
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #364153;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.create-account-header {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 72.5px;
+  position: relative;
+  z-index: 100;
+  height: 73px;
+}
+
+.create-account-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+}
+
+.create-account-brand-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(21, 93, 252, 1) 0%, rgba(152, 16, 250, 1) 50%, rgba(230, 0, 118, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.create-account-brand-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.create-account-brand-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #155dfc;
+  line-height: 28px;
+}
+
+.create-account-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 40px;
+}
+
+.create-account-nav-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #364153;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 24px;
+  transition: color 0.2s ease;
+}
+
+.create-account-nav-button:hover {
+  color: #155dfc;
+}
+
+.create-account-nav-primary {
+  background-color: #155dfc;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.create-account-nav-primary:hover {
+  background-color: #1248d4;
+}
+
+/* Main Content */
+.create-account-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  margin-top: 64px;
+}
+
+.create-account-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 448px;
+  overflow: hidden;
+  position: relative;
+}
+
+.create-account-card-top-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #155dfc 0%, #9810fa 50%, #e60076 100%);
+  width: 100%;
+}
+
+/* Header Section */
+.create-account-header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 32px 0 32px;
+  text-align: center;
+}
+
+.create-account-icon-badge {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: linear-gradient(138.01278750418334deg, rgba(21, 93, 252, 1) 0%, rgba(152, 16, 250, 1) 50%, rgba(230, 0, 118, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.create-account-icon-badge svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+  fill: white;
+}
+
+.create-account-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #101828;
+  margin: 0;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.create-account-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6a7282;
+  margin: 0;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Form Section */
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  padding-top: 0;
+}
+
+.create-account-input-group {
+  width: 100%;
+}
+
+.create-account-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(249, 250, 251, 0.5);
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  height: 48px;
+  padding: 4px 12px;
+  overflow: hidden;
+}
+
+.create-account-input-icon {
+  width: 20px;
+  height: 20px;
+  color: #717182;
+  margin-right: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.create-account-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #101828;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 0;
+  line-height: normal;
+}
+
+.create-account-input::placeholder {
+  color: #717182;
+}
+
+.create-account-input-wrapper:focus-within {
+  border-color: #155dfc;
+  background-color: rgba(21, 93, 252, 0.03);
+}
+
+.create-account-password-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #717182;
+  margin-left: 8px;
+}
+
+.create-account-password-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Checkbox */
+.create-account-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.create-account-checkbox-input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background-color: #f3f3f5;
+  cursor: pointer;
+  accent-color: #155dfc;
+  flex-shrink: 0;
+}
+
+.create-account-checkbox-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #364153;
+  cursor: pointer;
+  line-height: 20px;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Create Account Button */
+.create-account-button {
+  background: linear-gradient(90deg, #155dfc 0%, #9810fa 50%, #e60076 100%);
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.create-account-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 15px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.create-account-button:active {
+  transform: translateY(0);
+}
+
+/* Divider */
+.create-account-divider {
+  position: relative;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 32px 0;
+}
+
+.create-account-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e5e7eb;
+  transform: translateY(-50%);
+}
+
+.create-account-divider span {
+  background: white;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a7282;
+  position: relative;
+  z-index: 1;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Social Buttons */
+.create-account-social-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0 32px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.create-account-social-button {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0a0a0a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  transition: all 0.2s ease;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.create-account-social-button:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.create-account-social-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Footer */
+.create-account-footer {
+  padding: 0 32px 32px;
+  text-align: center;
+}
+
+.create-account-footer-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a5565;
+  margin: 0;
+  line-height: 20px;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.create-account-footer-link {
+  background: none;
+  border: none;
+  color: #155dfc;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.create-account-footer-link:hover {
+  color: #1248d4;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .create-account-header {
+    padding: 12px 16px;
+    justify-content: space-between;
+  }
+
+  .create-account-nav {
+    gap: 12px;
+  }
+
+  .create-account-nav-button {
+    font-size: 14px;
+  }
+
+  .create-account-card {
+    border-radius: 12px;
+  }
+
+  .create-account-form,
+  .create-account-header-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .create-account-social-buttons {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .create-account-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .create-account-title {
+    font-size: 24px;
+  }
+}

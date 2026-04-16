@@ -1,0 +1,206 @@
+:root{
+  /* Color palette (semantic) */
+  --bg-100: #F8FBFF;
+  --bg-200: #EEF7FF;
+  --background: var(--bg-100);
+  --surface: #FFFFFF;
+  --muted: #ECECF0;
+  --muted-foreground: #94A3B8;
+  --text-900: #030213;
+  --text-700: #4B5563;
+
+  /* Brand */
+  --brand-blue-50: #EFF6FF;
+  --brand-blue-300: #60A5FA;
+  --brand-blue-600: #2563EB;
+  --brand-purple-600: #7C3AED;
+
+  /* Primary / Accent (semantic tokens used by components) */
+  --primary: var(--brand-blue-600);
+  --primary-foreground: #ffffff;
+  --secondary: #06B6D4; /* teal-ish */
+  --secondary-foreground: #04263a;
+  --accent: #7C3AED;
+  --ring: rgba(37,99,235,0.12);
+  --destructive: #EF4444;
+  --success: #10B981;
+  --warning: #F59E0B;
+
+  /* Gradients */
+  --grad-primary: linear-gradient(90deg,var(--brand-blue-600),var(--brand-purple-600));
+  --grad-hero: linear-gradient(135deg,#06B6D4 0%, #7C3AED 60%, #2563EB 100%);
+
+  /* Typography */
+  --font-sans: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --display-1: 184px ;
+  --display-2: 3.8125rem; /* ~61px */
+  --h1: 60px;
+  --h2: 1.875rem; /* 30px */
+  --body-lg: 1.375rem; /* 22px */
+  --body-md: 1.125rem; /* 18px */
+  --text-base: 1rem; /*16px*/
+  --leading-tight: 1.05;
+  --leading-normal: 1.4;
+
+  /* Spacing scale (partial) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+
+  /* Shadows */
+  --shadow-1: 0 6px 24px rgba(15, 23, 42, 0.08);
+  --shadow-2: 0 20px 60px rgba(15, 23, 42, 0.12);
+
+  /* Button sizing */
+  --btn-padding-y: 12px;
+  --btn-padding-x: 24px;
+}
+
+:root.dark {
+  --bg-100: #0B1220;
+  --surface: #0F1724;
+  --text-900: #F8FAFC;
+  --text-700: #CBD5E1;
+}
+
+/* Component utility classes mapped to design tokens */
+.app-font {
+  font-family: var(--font-sans);
+  color: var(--text-900);
+}
+
+.text-display-1 {
+  font-size: var(--display-1);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-h1 {
+  font-size: var(--h1);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-body-lg {
+  font-size: var(--body-lg);
+  line-height: var(--leading-normal);
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--space-4);
+}
+
+.input {
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  border: 1px solid rgba(15,23,42,0.06);
+  color: var(--text-900);
+  outline: none;
+}
+.input:focus {
+  box-shadow: 0 0 0 4px var(--ring);
+  border-color: var(--primary);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  border-radius: 12px;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: 0 8px 30px rgba(37,99,235,0.12);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid rgba(37,99,235,0.12);
+}
+
+.btn-destructive {
+  background: var(--destructive);
+  color: white;
+}
+
+.btn-link {
+  background: transparent;
+  color: var(--primary);
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+}
+
+.hero {
+  background: var(--grad-hero);
+  color: white;
+  padding: calc(var(--space-6) + 24px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2);
+  
+}
+
+.text-grad-hero {
+  background: linear-gradient(90deg, #155DFC 0%, #9810FA 50%, #009689 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* Make gradient text robust: ensure inline-block and transparent fill */
+.text-grad-hero {
+  display: inline-block;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Figma heading style: exact typography for the hero title */
+.figma-heading {
+  font-family: 'Arimo', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 101px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 101px; /* 100% */
+  letter-spacing: -2.525px;
+  text-align: center;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dark mode overrides (semantic) */
+:root.dark {
+  --background: #0B1220;
+  --surface: #0F1724;
+  --text-900: #F8FAFC;
+  --muted-foreground: #94A3B8;
+  --ring: rgba(124,58,237,0.12);
+}
