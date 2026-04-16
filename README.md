@@ -6,8 +6,8 @@
 ### Maria McIntyre
 
 Linkedin: www.linkedin.com/in/maria-mcintyre
-Email: mtmcintyre123@gmail.com
-Phone Number: 781-281-5583 
+Email:
+Phone Number: 
 
 Maria McIntyre is a graduating senior with a Bachelors of Science in Computer Science and Finance. During her time at The George Washington University she has been an active member of the Adopted and Fostered Student association holding the position of Treasurer for two years and President for one. She also is a member of Theta Tau Professional Engineering Fraternity holding positions of New Member Educator for two semesters, Recruitment Chair and Fundraising Chair. 
 
